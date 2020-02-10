@@ -3,8 +3,10 @@ package com.guzmanx.truecitizenquiz;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -15,7 +17,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     // reference button and text widgets
     private Button falseButton;
     private Button trueButton;
+    private ImageButton nextButton;
     private TextView questionTextView;
+
+    private int currentQuestionIndex = 0;
 
     // Array contains instantiated objects of model Question class, initialized with string
     // resources and the correct answer associated
@@ -38,6 +43,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         // Connect to button and text ids
         falseButton = findViewById(R.id.false_button);
         trueButton = findViewById(R.id.true_button);
+        nextButton = findViewById(R.id.next_button);
         questionTextView = findViewById(R.id.answer_text_view);
 
         // Two ways to attach on click listener to buttons
@@ -46,6 +52,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         // register our buttons to View.OnClickListener, so they can be listened in onClick()
         falseButton.setOnClickListener(this);
         trueButton.setOnClickListener(this);
+        nextButton.setOnClickListener(this);
     }
 
     // Override onClick() from View.OnClickListener, so we listen to clicks on false and true button
@@ -65,6 +72,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                         Toast.LENGTH_SHORT)
                         .show();
                 break;
+            case R.id.next_button:
+                // go to next question, make sure once counter gets to end of length, go back to 0
+                currentQuestionIndex = (currentQuestionIndex + 1) % questionBank.length;
+                Log.d("Current", "onClick: " + currentQuestionIndex);
+                // Make sure we are within bounds of our question bank
+                questionTextView.setText(questionBank[currentQuestionIndex].getAnswerResId());
         }
     }
 
