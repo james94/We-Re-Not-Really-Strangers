@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">TrueCitizenQuiz</string>
+    <string name="question_declaration">The (U.S.) Declaration of Independence was Adopted in 1776.</string>
 </resources>
