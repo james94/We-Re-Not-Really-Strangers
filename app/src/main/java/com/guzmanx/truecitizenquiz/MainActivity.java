@@ -62,23 +62,44 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         switch(v.getId()) {
             // Create toast message for button clicked
             case R.id.false_button:
-                Toast.makeText(MainActivity.this, "False",
-                        Toast.LENGTH_SHORT)
-                        .show();
+                // User chose false button for answer to question, check is it correct
+                checkAnswer(false);
                 break;
 
             case R.id.true_button:
-                Toast.makeText(MainActivity.this, "True",
-                        Toast.LENGTH_SHORT)
-                        .show();
+                // User chose true button for answer to question, check is it correct
+                checkAnswer(true);
                 break;
             case R.id.next_button:
                 // go to next question, make sure once counter gets to end of length, go back to 0
                 currentQuestionIndex = (currentQuestionIndex + 1) % questionBank.length;
-                Log.d("Current", "onClick: " + currentQuestionIndex);
-                // Make sure we are within bounds of our question bank
-                questionTextView.setText(questionBank[currentQuestionIndex].getAnswerResId());
+                updateQuestion();
         }
     }
 
+    private void updateQuestion() {
+        Log.d("Current", "onClick: " + currentQuestionIndex);
+        // Make sure we are within bounds of our question bank
+        questionTextView.setText(questionBank[currentQuestionIndex].getAnswerResId());
+    }
+
+    private void checkAnswer(boolean userChooseCorrect) {
+        // Get actual answer from question bank at current question index
+        boolean answerIsTrue = questionBank[currentQuestionIndex].isAnswerTrue();
+        int toastMessageId = 0;
+
+        // check whatever the answer the user chose with the correct answer from question bank
+        if(userChooseCorrect == answerIsTrue) {
+            // toast message id will point to correct answer
+            toastMessageId = R.string.correct_answer;
+        } else {
+            toastMessageId = R.string.wrong_answer;
+        }
+
+        // Create a toast message displaying correct or wrong based on users chosen answer
+        Toast.makeText(MainActivity.this, toastMessageId,
+                Toast.LENGTH_SHORT)
+                .show();
+
+    }
 }
