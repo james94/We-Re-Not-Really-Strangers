@@ -9,14 +9,14 @@
     tools:context=".MainActivity">
 
     <ImageView
-        android:src="@drawable/ic_launcher_foreground"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_width="337dp"
+        android:layout_height="236dp"
+        android:src="@mipmap/us_citizenship_icon_foreground" />
 
     <TextView
         android:id="@+id/answer_text_view"
         android:text="@string/question_amendments"
-        android:textColor="@android:color/white"
+        android:textColor="@android:color/black"
         android:textSize="16sp"
         android:padding="8dp"
         android:layout_width="wrap_content"
@@ -42,11 +42,26 @@
 
     </LinearLayout>
 
-    <ImageButton
-        android:contentDescription="@string/next_text"
-        android:id="@+id/next_button"
-        android:src="@android:drawable/ic_media_next"
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_marginTop="34dp"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:contentDescription="@string/previous_text"
+            android:id="@+id/prev_button"
+            android:src="@drawable/previous_white_med"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageButton
+            android:contentDescription="@string/next_text"
+            android:id="@+id/next_button"
+            android:src="@drawable/next_white_med"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
 
 </LinearLayout>
