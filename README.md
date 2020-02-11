@@ -1,5 +1,9 @@
 # Project: True Citizen Quiz
 
+![true_citizen_quiz_app.jpg](./images/emulator/nexus_5x_api_25/true_citizen_quiz_app.jpg)
+
+**Figure**: True Citizen Quiz Android App
+
 ## Overview
 
 <!-- Description of project and purpose. -->
@@ -54,32 +58,46 @@ The core class components in MVC Architecture is the Controller (we call Activit
 
 <!-- Instructions on how to interact with android quiz app -->
 
-Launch the Android App from Android Studio by clicking on the Run button. The app consists of True and False questions:
+Launch the Android App from Android Studio by clicking on the Run button. The app consists of True
+and False questions:
+
+![true_citizen_quiz_app.jpg](./images/emulator/nexus_5x_api_25/true_citizen_quiz_app.jpg)
+
+**Figure**: Question 1 on Amendments
+
+As you can see above, you are presented with a True or False question. Your job is to choose
+whether the question is **True or False**. Once you choose your answer, the app will notify you
+whether your answer was correct or not.
 
 ![q1_correct_answer_toast.jpg](./images/emulator/nexus_5x_api_25/q1_correct_answer_toast.jpg)
 
-**Figure**: Selecting False as Answer to Question #1 on Amendments is Correct
+**Figure**: Selecting False as Answer to Question 1 on Amendments is Correct
 
-As you can see above, there is a True or False question that is in white text. Your job is to choose
-whether the question is **True or False** by pressing on one of the **two buttons**. As soon as you
-click on one of the buttons, the app will notify you whether your answer was correct or not. For
-instance in the figure above for question #1, you can see the app notifies you that clicking on
-False was the correct answer. However, for question #1, if you were to click on True, the app would
+For instance in the figure above for question 1, you can see the app notifies you that clicking on
+False was the correct answer. However, for question 1, if you were to click on True, the app would
 notify you that True was the incorrect answer:
 
 ![q1_incorrect_answer_toast.jpg](./images/emulator/nexus_5x_api_25/q1_incorrect_answer_toast.jpg)
 
-**Figure**: Selecting True as Answer to Question #1 on Amendments is Incorrect
+**Figure**: Selecting True as Answer to Question 1 on Amendments is Incorrect
 
 When you are ready to move onto the next question, click on the **next button** below the True and
-False button. You will be navigated to the question on the declaration:
+False button. You will be navigated to the next question on the declaration:
 
 ![declaration_question_init.jpg](./images/emulator/nexus_5x_api_25/declaration_question_init.jpg)
 
-**Figure**: Next Button to Navigate to Question #2 on Declaration
+**Figure**: Next Button to Navigate to Question 2 on Declaration
 
 After you answer all 8 questions, the app will loop you back to question 1 to avoid going out of
 bounds.
+
+If you need to go to a previous question, click on the previous button, in our case, we are back
+at the question 1 on amendments:
+
+![true_citizen_quiz_app.jpg](./images/emulator/nexus_5x_api_25/true_citizen_quiz_app.jpg)
+
+If you are on the first question, the previous button will not jump to question 8, it will stay
+at question 1.
 
 ## Versions
 
