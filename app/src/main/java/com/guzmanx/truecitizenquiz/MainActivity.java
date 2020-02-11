@@ -18,6 +18,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private Button falseButton;
     private Button trueButton;
     private ImageButton nextButton;
+    private ImageButton previousButton;
     private TextView questionTextView;
 
     private int currentQuestionIndex = 0;
@@ -44,6 +45,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         falseButton = findViewById(R.id.false_button);
         trueButton = findViewById(R.id.true_button);
         nextButton = findViewById(R.id.next_button);
+        previousButton = findViewById(R.id.prev_button);
         questionTextView = findViewById(R.id.answer_text_view);
 
         // Two ways to attach on click listener to buttons
@@ -53,6 +55,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         falseButton.setOnClickListener(this);
         trueButton.setOnClickListener(this);
         nextButton.setOnClickListener(this);
+        previousButton.setOnClickListener(this);
     }
 
     // Override onClick() from View.OnClickListener, so we listen to clicks on false and true button
@@ -65,7 +68,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 // User chose false button for answer to question, check is it correct
                 checkAnswer(false);
                 break;
-
             case R.id.true_button:
                 // User chose true button for answer to question, check is it correct
                 checkAnswer(true);
@@ -74,6 +76,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 // go to next question, make sure once counter gets to end of length, go back to 0
                 currentQuestionIndex = (currentQuestionIndex + 1) % questionBank.length;
                 updateQuestion();
+                break;
+            case R.id.prev_button:
+                // go to prior question, make sure once dec count gets to first question, then stop
+                if(currentQuestionIndex > 0) {
+                    currentQuestionIndex = (currentQuestionIndex - 1) % questionBank.length;
+                    updateQuestion();
+                }
         }
     }
 
