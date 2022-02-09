@@ -3,4 +3,6 @@
     <color name="colorPrimary">#F44336</color>
     <color name="colorPrimaryDark">#8F8E8E</color>
     <color name="colorAccent">#D81B60</color>
+    <color name="dark_beaver_gray">#877D73</color>
+    <color name="vlight_ash_gray">#636458</color>
 </resources>

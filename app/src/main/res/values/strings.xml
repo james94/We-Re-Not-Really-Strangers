@@ -1,21 +1,63 @@
 <resources>
-    <string name="app_name">TrueCitizenQuiz</string>
+    <string name="app_name">We\'re Not Really Strangers</string>
+    <string name="app_signature">J&amp;J</string>
     <string name="true_text">true</string>
     <string name="false_text">false</string>
 
-    <string name="question_declaration">The (U.S.) Declaration of Independence was Adopted in 1776.</string>
-    <string name="correct_answer">That\'s correct</string>
-    <string name="wrong_answer">That\'s incorrect</string>
-    <string name="question_constitution">The Supreme law of the land is the Constitution.</string>
-    <string name="question_amendments">The (U.S.) Constitution has 26 Amendments.</string>
-    <string name="question_independence_rights">The two rights in the Declaration of Independence are
-        \n \t <b>life</b> \n \t <b>pursuit of happiness</b>.</string>
-    <string name="question_religion">Freedom of religion means:
-        \n \t <b>You can practice any religion, or not practice a religion</b>.</string>
-    <string name="question_government">Journalists is one branch or part of the government.</string>
-    <string name="question_government_feds">Congress does not make federal laws.</string>
-    <string name="question_government_senators">There are one hundred (100) U.S. Senators.</string>
+    <string name="lvl_1_perception_q1">What was your first impression of me?</string>
+    <string name="lvl_1_perception_q2">Do you think I\'ve ever checked an ex\'s phone for evidence?</string>
+    <string name="lvl_1_perception_q3">What do you think I\'m most likely to splurge on?</string>
+    <string name="lvl_1_perception_q4">Do I seem like a cat or dog person?</string>
+    <string name="lvl_1_perception_q5">What is my body language telling you right now?</string>
+    <string name="lvl_1_perception_q6">What about me intrigues you?</string>
+    <string name="lvl_1_perception_q7">What do you think my go to karaoke song is?</string>
+    <string name="lvl_1_perception_q8">Do I seem like a morning person or a night owl? Why?</string>
+    <string name="lvl_1_perception_q9">Do I seem like a coffee or tea person? Sweetened or unsweetened?</string>
+    <string name="lvl_1_perception_q10">Do you think I fall in love easily? Why or why not?</string>
+    <string name="lvl_1_perception_q11">What\'s the first thing you noticed about me?</string>
+    <string name="lvl_1_perception_q12">What does my phone wallpaper tell you about me?</string>
+    <string name="lvl_2_connection_q1">What is the most pain you\'ve ever been in that wasn\'t physical?</string>
+    <string name="lvl_2_connection_q2">What\'s been your happiest memory this past year?</string>
+    <string name="lvl_2_connection_q3">Do you think the image you have of yourself matches the image people see you as?</string>
+    <string name="lvl_2_connection_q4">What is a complement you wish you received more frequently?</string>
+    <string name="lvl_2_connection_q5">What\'s your mother\'s name? And the most beautiful thing about her?</string>
+    <string name="lvl_2_connection_q6">What is your most terrible memory?</string>
+    <string name="lvl_2_connection_q7">What lesson took the longest to unlearn?</string>
+    <string name="lvl_2_connection_q8">What are you still trying to prove to yourself?</string>
+    <string name="lvl_2_connection_q9">If you could have it your way: who would you be with? Where would you be? What would you be doing?</string>
+    <string name="lvl_2_connection_q10">If you have, when was the moment you realized you weren\'t invincible?</string>
+    <string name="lvl_2_connection_q11">If you could get to know someone in your life on a deeper level, who would it be and why?</string>
+    <string name="lvl_2_connection_q12">What would your self not believe about your life today?</string>
+    <string name="lvl_2_connection_q13">How would you describe the feeling of being in love in one word?</string>
+    <string name="lvl_2_connection_q14">What is a dream you let go of?</string>
+    <string name="lvl_3_reflection_q1">What do you think our most important similarity is?</string>
+    <string name="lvl_3_reflection_q2">Why do you think we met?</string>
+    <string name="lvl_3_reflection_q3">When in this game did you feel most connected to me?</string>
+    <string name="lvl_3_reflection_q4">What do you think my superpower is?</string>
+    <string name="lvl_3_reflection_q5">How do our personalities complement each other?</string>
+    <string name="lvl_3_reflection_q6">Alternate sharing something you\'d consider a positive characteristic of your partner?</string>
+    <string name="lvl_3_reflection_q7">What can we create together?</string>
+    <string name="lvl_3_reflection_q8">What would make you feel closer to me?</string>
+    <string name="lvl_3_reflection_q9">How does one earn your vulnerability? Have I earned it? How can I earn more?</string>
+    <string name="lvl_3_reflection_q10">What do you think I should know about myself that perhaps I\'m unaware of?</string>
+    <string name="lvl_3_reflection_q11">What do you admire most about me?</string>
+    <string name="lvl_3_reflection_q12">What about me most surprised you?</string>
+    <string name="lvl_3_reflection_q13">What answer of mine made you light up?</string>
+    <string name="lvl_3_reflection_q14">What do you think my defining characteristic is?</string>
+    <string name="lvl_3_reflection_q15">What can I help you with?</string>
+    <string name="lvl_3_reflection_q16">What do you recommend I let go of, if anything?</string>
+    <string name="lvl_3_reflection_q17">What about me is the hardest for you to understand?</string>
+    <string name="lvl_3_reflection_q18">In one word, describe how you feel right now?</string>
+    <string name="lvl_3_reflection_q19">What is one thing you think I can do that would dramatically improve my life?</string>
+    <string name="lvl_3_reflection_q20">What question were you most afraid to answer? Or was most difficult to answer?</string>
+    <string name="lvl_3_reflection_q21">What do you think I fear most?</string>
+    <string name="final_card_q1">Final Card:\n Would you go on a second date with me?</string>
     <string name="next_text">next</string>
     <string name="previous_text">previous</string>
+    <string name="level_1_perception">Level 1 Perception</string>
+    <string name="level_2_connection">Level 2 Connection</string>
+    <string name="level_3_reflection">Level 3 Reflection</string>
+    <string name="final_card">Final Card</string>
+    <string name="question_level">level</string>
 
 </resources>

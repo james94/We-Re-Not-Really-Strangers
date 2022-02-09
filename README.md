@@ -1,8 +1,8 @@
-# Project: True Citizen Quiz
+# Project: We're Not Really Strangers
 
 ![true_citizen_quiz_app.jpg](./images/emulator/nexus_5x_api_25/true_citizen_quiz_app.jpg)
 
-**Figure**: True Citizen Quiz Android App
+**Figure**: We're Not Really Strangers
 
 ## Overview
 
